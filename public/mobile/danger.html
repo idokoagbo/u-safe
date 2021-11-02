@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" />
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge" />
+		
+		<title>UNDSS - Personnel Tracking Tool</title>
+		
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1" />
+
+		<!-- bootstrap 4 css file -->
+		<link rel = "stylesheet" href="css/bootstrap.min.css" />
+
+		<!-- custom css -->
+		<link rel = "stylesheet" href="css/custom.css" />
+
+		<!-- fontawesome 5.0.4 js file -->
+		<script src = "js/fontawesome-all.min.js"></script>
+
+		<!--material design-->
+		<link rel="stylesheet" href="css/material.min.css">
+		<script src="js/material.min.js"></script>
+
+		<link rel="stylesheet" href="css/material-icons.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<!-- favicon -->
+		<link rel = "shortcut icon" type = "image/png" href = "favicon.png" />
+	</head>
+	
+	<body>
+		<header>
+			<nav class = "navbar navbar-light" style="background-color:rgb(240,240,240);color:#000;">
+				<a class = "navbar-brand" href = "javascript:history.back()">
+					<i class="material-icons">arrow_back</i>
+					<img src = "images/logo.png" height = "30rem"  class="d-inline-block align-top" alt="UNDSS">
+				</a>
+
+				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="material-icons">more_vert</i>
+				</button>
+
+				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+				for="demo-menu-lower-right">
+					<li class="mdl-menu__item" onclick="document.location.href='index.html'">Home</li>
+                    <li class="mdl-menu__item" onclick="document.location.href='messages.html'">Inbox</li>
+					<li disabled class="mdl-menu__item">Terms &amp; Conditions</li>
+					<li disabled class="mdl-menu__item">Privacy Policy</li>
+					<li class="mdl-menu__item" onclick="document.cookie = 'user=; expires=Thu, 18 Dec 2018 12:00:00 UTC';document.location.href='login.html'">Logout</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class = "container-fluid">
+			<div class = "col-12">
+
+				<div class="list-group">
+					<button type="button" onclick="document.location.href='danger-message.html?id=Active%20Shooter'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Active Shooter
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Civil%20Unrest'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Civil Unrest
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=PBID'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						PBIED
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=VBID'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						VBIED
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Armed%20Clash'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Armed Clash
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Kidnapping'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Kidnapping
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Theft'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Theft
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Arrest'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Arrest
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Communal%20Clash'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Communal Clash
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Demonstration'" style="margin-top:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Demonstration
+					</button>
+					<button type="button" onclick="document.location.href='danger-message.html?id=Complex'" style="margin-top:10px;margin-bottom:10px;background-color: rgb(85,140,219);color:#fff" class="list-group-item list-group-item-action d-flex justify-content align-items-center">
+						Complex Attack
+					</button>
+				</div>
+
+				<!--a href = "danger-message.html?id=Active%20Shooter" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Active Shooter</a>
+
+				<a href = "danger-message.html?id=Civil%20Unrest" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Civil Unrest</a>
+
+				<a href = "danger-message.html?id=PBID" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">PBIED</a>
+				<a href = "danger-message.html?id=VBID" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">VBIED</a>
+				<a href = "danger-message.html?id=Armed%20Clash" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Armed Clash</a>
+				<a href = "danger-message.html?id=Kidnapping" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Kidnapping</a>
+				<a href = "danger-message.html?id=Theft" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Theft</a>
+				<a href = "danger-message.html?id=Arrest" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Arrest</a>
+				<a href = "danger-message.html?id=Communal%20Clash" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Communal Clash</a>
+				<a href = "danger-message.html?id=Demonstration" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Demonstration</a>
+				<a href = "danger-message.html?id=Complex" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn-block">Complex Attack</a-->
+			</div>
+		</section>
+		
+		<div class = "overlay"></div>
+
+		<!-- jQuery 3.3.1 -->
+		<script src = "js/jquery-3.3.1.min.js"></script>
+		
+		<!-- bootstrap 4 js file -->
+		<script src = "js/bootstrap.min.js"></script>
+
+		<!-- custom jQuery file -->
+		<script src = "js/custom.js"></script>
+	</body>
+</html>

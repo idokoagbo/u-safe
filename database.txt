@@ -1,0 +1,41 @@
+Database
+
+users
+id-primary key
+user_id
+name
+phone
+email
+Address
+Geolocation
+status
+role
+verified
+
+
+Response
+user_id
+response_code
+response type
+status
+date
+file_attach1
+file_attach2
+file_attach3
+file_attach4
+file_attach5
+
+Response_type
+id
+name
+1- safe
+2- danger
+
+response code
+0- none
+1- active shooter
+2- PBID
+3- VBID
+4- Civil Unrest
+5- Complex
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" />
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+		<meta http-equiv = "X-UA-Compatible" content = "IE = edge" />
+		
+		<title>UNDSS - Personnel Tracking Tool</title>
+		
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1" />
+
+		<!-- bootstrap 4 css file -->
+		<link rel = "stylesheet" href="css/bootstrap.min.css" />
+
+		<!-- custom css -->
+		<link rel = "stylesheet" href="css/custom.css" />
+
+		<!--material design-->
+		<link rel="stylesheet" href="css/material.min.css">
+		<script src="js/material.min.js"></script>
+
+		<link rel="stylesheet" href="css/material-icons.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<!-- favicon -->
+		<link rel = "shortcut icon" type = "image/png" href = "favicon.png" />
+	</head>
+	
+	<body onload="showPage()" style="margin:0;">
+        <div id="loader" style="opacity: 0"></div>
+        
+        <div id="myDiv" style="opacity: 1">
+            
+        <header>
+			<nav class = "navbar navbar-light" style="background-color:rgb(240,240,240);color:#000;">
+				<a class = "navbar-brand" href = "javascript:history.back()">
+					<i class="material-icons">arrow_back</i>
+					<img src = "images/logo.png" height = "30rem"  class="d-inline-block align-top" alt="UNDSS">
+				</a>
+
+				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+					<i class="material-icons">more_vert</i>
+				</button>
+
+				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+				for="demo-menu-lower-right">
+					<li class="mdl-menu__item" onclick="document.location.href='index.html'">Home</li>
+                    <li class="mdl-menu__item" onclick="document.location.href='messages.html'">Inbox</li>
+					<li disabled class="mdl-menu__item">Terms &amp; Conditions</li>
+					<li disabled class="mdl-menu__item">Privacy Policy</li>
+					<li class="mdl-menu__item" onclick="document.cookie = 'user=; expires=Thu, 18 Dec 2018 12:00:00 UTC';document.location.href='login.html'">Logout</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class = "container-fluid">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Inbox</h4>
+                    
+                    <hr/>
+                    
+                    
+                    <div id="alert-messages">
+                        
+                    </div>
+                </div>
+            </div>
+            
+		</section>
+        
+        </div>
+
+		<!-- jQuery 3.3.1 -->
+		<script src = "js/jquery-3.3.1.min.js"></script>
+		
+		<!-- bootstrap 4 js file -->
+		<script src = "js/bootstrap.min.js"></script>
+
+		<!-- sweetalert 2 js file -->
+		<script src = "js/sweetalert.js"></script>
+
+		<!-- custom jQuery file -->
+		<script src = "js/custom.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+            $("#user_id").val(getCookie('user'));
+            $("#geo_lat").val(getCookie('lat'));
+            $("#geo_lng").val(getCookie('lng'));
+            $("#incidence").val(getParameterByName('id'));
+        });
+        </script>
+	</body>
+</html>
